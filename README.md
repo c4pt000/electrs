@@ -13,8 +13,9 @@ Documentation for the database schema and indexing process [is available here](d
 Install Rust, Bitcoin Core (no `txindex` needed) and the `clang` and `cmake` packages, then:
 
 ```bash
-$ git clone https://github.com/blockstream/electrs && cd electrs
+$ git clone https://github.com/c4pt000/electrs && cd electrs
 $ git checkout new-index
+$ yum install clang-devel cargo -y
 $ cargo run --release --bin electrs -- -vvvv --daemon-dir ~/.bitcoin
 
 # Or for liquid:
